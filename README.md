@@ -27,11 +27,10 @@ github里的issue功能是个好东西啊，github基本上都快成为程序员
 的时候。
 
 
-### 发现前端一个好东西：
+### 好东西：
 [codepen.io](https://codepen.io/) 是个好东西，希望人人都有。
 
 [dribble](https://dribbble.com/)我也很爱。
-
 
 
 ## 20171213
@@ -39,6 +38,12 @@ github里的issue功能是个好东西啊，github基本上都快成为程序员
 妈的，被小米路由器坑了。必须克隆mac地址才能使用。
 
 >MAC地址克隆的功能是在网络提供商绑定了使用者的MAC地址限制使用者时，克隆所绑定的MAC地址，以达到多人共享使用网络的功能。
+
+### 工作:
+考虑直接使用node执行js脚本；
+
+### 网站：
+[iconfont] http://www.iconfont.cn/
 
 
 
