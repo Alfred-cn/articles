@@ -40,8 +40,19 @@ canvas，svg，video&audio;
 webworker, websocket;  
 sessionStorage, localstorage;
 
-#### iframe ??
-//待补充  
+## Web App工程化
+1.模块化：
+---
+[JS Moduling](../js/js_modulization_solution.md)
+
+2.构建工具：
+---
+
+3.包管理：
+---
+
+4.代码质量：
+---
 
 
 
