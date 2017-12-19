@@ -129,8 +129,10 @@ JS中，未声明的变量会直接抛出异常 var {name} is not defined，如�
 
 [详细描述三个阶段的demo](https://codepen.io/Littlegrace111/pen/jYqNXQ)
 
+```html
 <p data-height="265" data-theme-id="0" data-slug-hash="jYqNXQ" data-default-tab="js,result" data-user="Littlegrace111" data-embed-version="2" data-pen-title="event capture & bubble demo" class="codepen">See the Pen <a href="https://codepen.io/Littlegrace111/pen/jYqNXQ/">event capture & bubble demo</a> by Grace Wu (<a href="https://codepen.io/Littlegrace111">@Littlegrace111</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+```
 
 为什么要在冒泡阶段监听事件：
 ---
@@ -152,21 +154,24 @@ JS中，未声明的变量会直接抛出异常 var {name} is not defined，如�
 ---
 preventDefault(function)： 禁止元素的默认行为；
 
-stopPropagation(function):  阻止事件冒泡；
+stopPropagation(function):  停止事件冒泡；只监听发生在具体节点的事件，这个时候就需要停止事件冒泡。
 
-
+trigger(event): 模拟事件触发；
 
 ### 浏览器常用事件
 `load`：资源加载完成时触发：资源包括图片，css，js文件，video，document等；
 
 `DOMContentLoaded`：dom构建完毕的时候触发；
 
-``
+`resize`: 当节点尺寸发生变化时，触发这个事件。通常用在 window 上，这样可以监听浏览器窗口的变化。通常用在复杂布局和响应式上。
+常见的视差滚动效果网站以及同类比较复杂的布局网站，往往使用 JavaScript 来计算尺寸、位置。如果用户调整浏览器大小，尺寸、位置不随着改变则会出现错位情况。在 window 上监听该事件，触发时调用计算尺寸、位置的函数，可以根据浏览器的大小来重新计算。
 
+> 但需要注意一点，当浏览器发生任意变化都会触发 resize 事件，哪怕是缩小 1px 的浏览器宽度，这样调整浏览器时会触发大量的 resize 事件，你的回调函数就会被大量的执行，导致变卡、崩溃等。
 
+> 你可以使用函数 throttle 或者 debounce 技巧来进行优化，throttle 方法大体思路就是在某一段时间内无论多次调用，只执行一次函数，到达时间就执行；debounce 方法大体思路就是在某一段时间内等待是否还会重复调用，如果不会再调用，就执行函数，如果还有重复调用，则不执行继续等待。关于它们更详细的信息，我后面会介绍一下发表在我的博客上，这里不再赘述。
 
-
-
+#### 引用文档
+http://www.admin10000.com/document/6089.html
 
 
 
