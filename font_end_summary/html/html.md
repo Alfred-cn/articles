@@ -42,20 +42,36 @@ sessionStorage, localstorage;
 
 ## Web App工程化
 1.模块化：
----
 [JS Moduling](../js/js_modulization_solution.md)
 
 2.构建工具：
----
 
 3.包管理：
----
 
-4.代码质量：
----
-JSlint
+4.代码质量：JSlint
 
-## 缓存
+### WebApp形态简要分析
+
+1. 纯web方式
+---
+用于网站和web轻应用的开发，运行在浏览器及标准webview内。
+
+出于安全考虑，系统不会把所有系统底层能力暴露到web中，无法满足复杂应用的需求。
+
+无法捕获系统按键事件，Back键，音量键等，无法在web环境中截获。
+
+系统生命周期事件不完整，onPause，onResume等没有；
+
+出于安全的考虑，纯web环境无法操作本地文件；
+
+应用启动首屏白屏问题比较难解决；
+
+2. Hybrid App
+---
+定制webview，通过JS注入的方式，提供调用系统的能力，类似框架有Cordova；
+
+与node融合，完全抛弃android的webview；
+
 
 
 
