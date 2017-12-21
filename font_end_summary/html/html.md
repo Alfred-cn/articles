@@ -53,6 +53,11 @@ sessionStorage, localstorage;
 
 4.代码质量：
 ---
+JSlint
+
+## 缓存
+
+
 
 
 

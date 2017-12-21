@@ -173,5 +173,9 @@ trigger(event): 模拟事件触发；
 #### 引用文档
 http://www.admin10000.com/document/6089.html
 
+### JS 异步控制
+Promise, ES6 Generator, Async;
+
+
 
 
